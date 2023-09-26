@@ -1,3 +1,3 @@
-export default function Page() {
-  return "asd";
+export default function MainPage() {
+  return <>Main</>;
 }

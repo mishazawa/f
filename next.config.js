@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+
+const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: `http://127.0.0.1:${process.env.SERVER_PORT}/:path*`, // Proxy to Backend
+      },
+    ];
+  },
+};
 
 module.exports = nextConfig;

@@ -6,16 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pip": "python3 -m pip install -r requirements.txt -t python_modules",
+    "server": "python3 src/server/main.py"
   },
   "dependencies": {
     "@devexperts/remote-data-ts": "^2.1.1",
+    "@react-three/drei": "^9.85.0",
+    "@react-three/fiber": "^8.14.3",
+    "@types/three": "^0.156.0",
     "eslint-plugin-functional": "^6.0.0",
     "fp-ts": "^2.16.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "remeda": "^1.27.0"
+    "remeda": "^1.27.0",
+    "three": "^0.156.1",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@types/node": "latest",
