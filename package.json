@@ -9,19 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@devexperts/remote-data-ts": "^2.1.1",
+    "eslint-plugin-functional": "^6.0.0",
+    "fp-ts": "^2.16.1",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "remeda": "^1.27.0"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest"
+    "typescript": "latest"
   }
 }
