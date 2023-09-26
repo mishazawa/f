@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pip": "python3 -m pip install -r requirements.txt -t python_modules",
-    "server": "python3 src/server/main.py"
+    "pip": "hython -m pip install -r requirements.txt",
+    "server": "hython src/server/main.py",
+    "houdini": "hython src/server/houdini.py"
   },
   "dependencies": {
     "@devexperts/remote-data-ts": "^2.1.1",
