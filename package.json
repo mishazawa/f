@@ -18,6 +18,7 @@
     "eslint-plugin-functional": "^6.0.0",
     "fp-ts": "^2.16.1",
     "next": "latest",
+    "raw-loader": "^4.0.2",
     "react": "latest",
     "react-dom": "latest",
     "remeda": "^1.27.0",

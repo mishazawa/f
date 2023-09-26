@@ -1,19 +1,23 @@
 "use client";
 
-import { CameraControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Box } from "../components/utils/Box";
+
 import { Sidebar } from "./components/Sidebar";
+import { Character } from "./components/Character";
+import { Suspense } from "react";
+import { Camera } from "./components/Camera";
+import { Environment } from "./components/Environment";
 
 export default function Canv() {
   return (
     <div className="flex w-full">
       <div className="w-9/12 h-screen">
         <Canvas>
-          <ambientLight />
-          <pointLight position={[10, 10, 10]} />
-          <CameraControls />
-          <Box />
+          <Camera />
+          <Environment />
+          <Suspense fallback={null}>
+            <Character />
+          </Suspense>
         </Canvas>
       </div>
       <div className="w-3/12">
