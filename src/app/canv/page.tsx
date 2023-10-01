@@ -7,6 +7,7 @@ import { Character } from "./components/Character";
 import { Suspense } from "react";
 import { Camera } from "./components/Camera";
 import { Environment } from "./components/Environment";
+import { HoudiniGeo } from "./components/HoudiniGeo";
 
 export default function Canv() {
   return (
@@ -16,7 +17,8 @@ export default function Canv() {
           <Camera />
           <Environment />
           <Suspense fallback={null}>
-            <Character />
+            {/* <Character /> */}
+            <HoudiniGeo src="/assets/box.geo" />
           </Suspense>
         </Canvas>
       </div>
