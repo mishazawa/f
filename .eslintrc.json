@@ -11,6 +11,8 @@
     "plugin:functional/stylistic"
   ],
   "rules": {
-    "functional/functional-parameters": 0
+    "functional/functional-parameters": 0,
+    "functional/no-return-void": 0,
+    "functional/prefer-immutable-types": 0
   }
 }
