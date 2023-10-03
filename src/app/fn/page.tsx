@@ -6,7 +6,6 @@ import * as A from "fp-ts/Array";
 import * as E from "fp-ts/Either";
 import * as Ap from "fp-ts/Apply";
 import { pipe } from "fp-ts/lib/function";
-import { getOrElse } from "fp-ts/lib/EitherT";
 
 function validatorAsd(value: O.Option<string>): E.Either<string[], string> {
   return pipe(
